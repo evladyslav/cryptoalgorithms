@@ -40,5 +40,3 @@ def galois_generator(q):
         states_set = set(states)
         if states_set == full_state:
             return gen
-        #else:
-        #    return None

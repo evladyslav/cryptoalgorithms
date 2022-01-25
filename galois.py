@@ -1,11 +1,11 @@
-p = 2  # input('Input module: ')
-f = 'x^3+x^1+1'.split('+')  # input('URAVNENIE: ').split('+')
+p = 2
+f = 'x^3+x^1+1'.split('+')
 
 f_r = f[::-1]
-#  print('function factors -> ', f)
+
 n = int(f[0][2])
 etalon = ['1'] + ['x^{0}'.format(x) for x in range(n) if not x == 0]
-# print('etalon -> ', etalon)
+
 equations = {}
 sta = {}
 for i in range(len(etalon)):
@@ -72,7 +72,7 @@ fin = {}
 for k in zip(rev_factor.items(), std, w):
     fin[k[2]] = k[0][0]
     print('{0}   {1}  {2}  \t {3}'.format(k[1], k[0][0], k[2], "+".join(k[0][1].split("+")[1:])))
-#print(rev_factor)
+
 string = ''
 for i in f:
     if i == '1':
